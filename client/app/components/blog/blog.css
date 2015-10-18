@@ -1,0 +1,100 @@
+.blog {
+  *zoom: 1;
+  width: auto;
+  max-width: 960px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.blog:before,
+.blog:after {
+  content: '';
+  display: table;
+}
+.blog:after {
+  clear: both;
+}
+.blog .header * {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.blog .posts {
+  margin-top: 40px;
+}
+.blog .posts .post {
+  background-color: #fff;
+  margin-bottom: 15px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.blog .posts .post:before,
+.blog .posts .post:after {
+  content: '';
+  display: table;
+}
+.blog .posts .post:after {
+  clear: both;
+}
+.blog .posts .post:nth-child(3n) {
+  margin-right: 0%;
+  float: right;
+}
+.blog .posts .post:nth-child(3n+1) {
+  clear: both;
+}
+.blog .posts .post .post-img {
+  overflow: hidden;
+  height: 200px;
+}
+.blog .posts .post .post-img img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out 0.5s;
+}
+.blog .posts .post .post-img img:hover {
+  transform: scale(1.1);
+}
+.blog .posts .post .post-title {
+  padding: 10px 15px;
+  background-color: #efefef;
+}
+.blog .posts .post .post-author {
+  padding: 10px 15px;
+}
+.blog .posts .post .post-author * {
+  font-weight: 200;
+}
+.blog .posts .post .action {
+  position: absolute;
+  right: 10px;
+  bottom: 14px;
+}
+.blog .search {
+  *zoom: 1;
+  width: auto;
+  max-width: 300px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.blog .search:before,
+.blog .search:after {
+  content: '';
+  display: table;
+}
+.blog .search:after {
+  clear: both;
+}

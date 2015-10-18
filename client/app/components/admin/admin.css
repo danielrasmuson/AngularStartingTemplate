@@ -1,0 +1,71 @@
+.admin .admin-title,
+.admin .admin-create {
+  *zoom: 1;
+  width: auto;
+  max-width: 800px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.admin .admin-title:before,
+.admin .admin-create:before,
+.admin .admin-title:after,
+.admin .admin-create:after {
+  content: '';
+  display: table;
+}
+.admin .admin-title:after,
+.admin .admin-create:after {
+  clear: both;
+}
+.admin .admin-title .textbox,
+.admin .admin-create .textbox {
+  margin-bottom: 15px;
+}
+.admin .admin-title textarea,
+.admin .admin-create textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  min-height: 380px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 10px 15px;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.admin .admin-title .form-buttons,
+.admin .admin-create .form-buttons {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 22.75%;
+  margin-left: 77.25%;
+  margin-right: 3%;
+  text-align: right;
+}
+.admin .admin-title .form-buttons:before,
+.admin .admin-create .form-buttons:before,
+.admin .admin-title .form-buttons:after,
+.admin .admin-create .form-buttons:after {
+  content: '';
+  display: table;
+}
+.admin .admin-title .form-buttons:after,
+.admin .admin-create .form-buttons:after {
+  clear: both;
+}
+.admin .admin-title .form-buttons:nth-child(1n),
+.admin .admin-create .form-buttons:nth-child(1n) {
+  margin-right: 0%;
+  float: right;
+}
+.admin .admin-title .form-buttons:nth-child(1n+1),
+.admin .admin-create .form-buttons:nth-child(1n+1) {
+  clear: both;
+}

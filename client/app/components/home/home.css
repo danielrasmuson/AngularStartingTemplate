@@ -1,0 +1,57 @@
+$white: #fff;
+
+.home .hero {
+  height: 600px;
+  background-color: rgba(0,0,0,0.4);
+}
+.home .hero * {
+  color: $white;
+}
+.home .hero .title {
+  *zoom: 1;
+  width: auto;
+  max-width: 600px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.home .hero .title:before,
+.home .hero .title:after {
+  content: '';
+  display: table;
+}
+.home .hero .title:after {
+  clear: both;
+}
+.home .hero .title h1 {
+  font-size: 3rem;
+}
+.home .hero .title h3 {
+  font-size: 2rem;
+}
+.home .hero .title * {
+  font-weight: 300;
+}
+.home .items {
+  *zoom: 1;
+  width: auto;
+  max-width: 600px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.home .items:before,
+.home .items:after {
+  content: '';
+  display: table;
+}
+.home .items:after {
+  clear: both;
+}

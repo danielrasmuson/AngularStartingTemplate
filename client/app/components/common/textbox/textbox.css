@@ -1,0 +1,105 @@
+.textbox {
+  position: relative;
+  width: 100%;
+}
+.textbox input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  color: rgba(0,0,0,0.87);
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #11b38b;
+}
+.textbox input:focus {
+  outline: none;
+}
+.textbox input:focus ~ .highlight {
+  animation: inputHighlight 0.3s ease;
+}
+.textbox input:focus ~ .bar:before,
+.textbox input:focus ~ .bar:after {
+  width: 50%;
+}
+.textbox input:focus ~ label,
+.textbox input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #34ebbd;
+}
+.textbox label {
+  color: #074837;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: all 0.2s ease;
+}
+.textbox .bar {
+  position: relative;
+  display: block;
+}
+.textbox .bar:before,
+.textbox .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #1de9b6;
+  transition: ease all 0.2s;
+}
+.textbox .bar:before {
+  left: 50%;
+}
+.textbox .bar:after {
+  right: 50%;
+}
+.textbox .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+@-moz-keyframes inputHighlight {
+  from {
+    background: #1de9b6;
+  }
+  to {
+    background: transparent;
+    width: 0;
+  }
+}
+@-webkit-keyframes inputHighlight {
+  from {
+    background: #1de9b6;
+  }
+  to {
+    background: transparent;
+    width: 0;
+  }
+}
+@-o-keyframes inputHighlight {
+  from {
+    background: #1de9b6;
+  }
+  to {
+    background: transparent;
+    width: 0;
+  }
+}
+@keyframes inputHighlight {
+  from {
+    background: #1de9b6;
+  }
+  to {
+    background: transparent;
+    width: 0;
+  }
+}
