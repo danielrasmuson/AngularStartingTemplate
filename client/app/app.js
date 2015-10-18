@@ -16,6 +16,7 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';
 import angularMaterial from 'angular-material';
+import 'angular-material/angular-material.min.css';
 // because we exported a named variable
 // without using default keyword
 // we must import it with the brackets
