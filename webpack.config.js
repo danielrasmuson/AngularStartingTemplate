@@ -19,6 +19,7 @@ module.exports = {
       { test: /\.html$/, loader: 'raw' },
       { test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader' },
       { test: /\.(png|jpg|jpeg)$/, loader: 'file' },
+      { test: /\.json$/, loader: 'json' },
       { test: /\.js$/, loader: 'babel?stage=1', exclude: [/client\/lib/, /node_modules/, /\.spec\.js/] }
     ]
   },

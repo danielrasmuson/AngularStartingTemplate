@@ -17,6 +17,7 @@
     "angular-ui-router": "^0.2.15",
     "autoprefixer": "^6.0.3",
     "jeet": "^6.1.2",
+    "json-loader": "^0.5.3",
     "lodash": "^3.10.0",
     "normalize.css": "^3.0.3",
     "postcss-loader": "^0.6.0",

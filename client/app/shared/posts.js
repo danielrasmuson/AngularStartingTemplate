@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import postsData from './posts.json';
 
 const posts = ($http, API, $q) => {
   let allPosts = [];
