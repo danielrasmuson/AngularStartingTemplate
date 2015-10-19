@@ -16,13 +16,11 @@
     "angular-material": "^0.11.4",
     "angular-ui-router": "^0.2.15",
     "autoprefixer": "^6.0.3",
-    "jeet": "^6.1.2",
     "json-loader": "^0.5.3",
     "lodash": "^3.10.0",
     "normalize.css": "^3.0.3",
     "postcss-loader": "^0.6.0",
-    "precss": "^1.2.3",
-    "rupture": "^0.6.1"
+    "precss": "^1.2.3"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.3",
@@ -46,6 +44,7 @@
     "run-sequence": "^1.1.1",
     "style-loader": "^0.12.3",
     "stylus-loader": "^1.2.1",
+    "uglify": "^0.1.5",
     "webpack": "^1.10.1",
     "webpack-stream": "^2.0.0"
   }

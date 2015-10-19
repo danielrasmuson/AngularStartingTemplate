@@ -7,6 +7,8 @@ var path    = require('path');
 var argv    = require('yargs').argv;
 var tpl     = require('gulp-template');
 var rename  = require('gulp-rename');
+var uglify = require('gulp-uglify');
+var webpackOpts = require('./webpack.config');
 
 /*
 map of paths for using with the tasks below
@@ -34,9 +36,24 @@ gulp.task('todo', function() {
 
 gulp.task('build', ['todo'], function() {
   return gulp.src(paths.entry)
-    .pipe(webpack(require('./webpack.config')))
+    .pipe(webpack(webpackOpts))
     .pipe(gulp.dest(paths.dest));
 });
+
+gulp.task('prod-webpack', function() {
+  webpackOpts.devtool = '';
+  return gulp.src(paths.entry)
+    .pipe(webpack(webpackOpts))
+    .pipe(gulp.dest(paths.dest));
+});
+
+// this needs to wait for webpack to finish
+gulp.task('prod', ['prod-webpack', 'copy'], function(){
+  return gulp.src(paths.dest+'/'+webpackOpts.output.filename)
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.dest));
+})
+
 
 gulp.task('serve', function() {
   browser({
